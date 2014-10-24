@@ -1,10 +1,3 @@
-/**
- *Copyright 2014 Yemasthui
- *Modifications (including forks) of the code to fit personal needs are allowed only for personal use and should refer back to the original source.
- *This software is not for profit, any extension, or unauthorised person providing this software is not authorised to be in a position of any monetary gain from this use of this software. Any and all money gained under the use of the software (which includes donations) must be passed on to the original author.
- */
-
-
 (function () {
 
     //Define our function responsible for extending the bot.
@@ -65,6 +58,58 @@
             }
         },
         
+        bot.commands.tpCommand = {
+            command: 'tp',  //The command to be called. With the standard command literal this would be: !bacon
+            rank: 'user', //Minimum user permission to use the command
+            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("/me https://fungustime.pw/tastyplug/");
+                }
+            }
+        },
+        
+    bot.commands.hugCommand = {
+            command: 'hug',  //The command to be called. With the standard command literal this would be: !bacon
+            rank: 'user', //Minimum user permission to use the command
+            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("/me http://i.imgur.com/ZGSL7fa.png");
+                }
+            }
+        },
+        
+        bot.commands.lunacCommand = {
+            command: 'lunac',  //The command to be called. With the standard command literal this would be: !bacon
+            rank: 'user', //Minimum user permission to use the command
+            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("/me http://i.imgur.com/G0HJfqk.gif");
+                }
+            }
+        },
+        
+        bot.commands.fingCommand = {
+            command: 'fing',  //The command to be called. With the standard command literal this would be: !bacon
+            rank: 'user', //Minimum user permission to use the command
+            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("/me http://i.imgur.com/phr9V7v.png");
+                }
+            }
+        },
+        
         bot.commands.ohmuCommand = {
             command: 'ohmu',  //The command to be called. With the standard command literal this would be: !bacon
             rank: 'user', //Minimum user permission to use the command
@@ -74,6 +119,19 @@
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     API.sendChat("/me http://i.imgur.com/gNM8cpl.png");
+                }
+            }
+        },
+        
+        bot.commands.snfCommand = {
+            command: 'snf',  //The command to be called. With the standard command literal this would be: !bacon
+            rank: 'user', //Minimum user permission to use the command
+            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("/me http://i.imgur.com/tRzgqn7.png");
                 }
             }
         },
@@ -151,6 +209,19 @@
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     API.sendChat("/me http://i.imgur.com/MTmwzqE.png");
+                }
+            }
+        },
+        
+        bot.commands.jep2Command = {
+            command: 'jep2',  //The command to be called. With the standard command literal this would be: !bacon
+            rank: 'user', //Minimum user permission to use the command
+            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("/me http://i.imgur.com/PzRSYkZ.png");
                 }
             }
         },
@@ -282,7 +353,20 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("/me heil Hornpub :forsensheffy:7:forsensheffy:/");
+                    API.sendChat("/me heil HornPub :forsensheffy:7:forsensheffy:/");
+                }
+            }
+        },
+        
+        bot.commands.forsenCommand = {
+            command: 'forsen',  //The command to be called. With the standard command literal this would be: !bacon
+            rank: 'user', //Minimum user permission to use the command
+            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("/me http://forsencancer.weebly.com/");
                 }
             }
         },
@@ -516,7 +600,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("/me https://dl.dropboxusercontent.com/u/2458938/rottiboard/rottiboard.html");
+                    API.sendChat("/me http://i.imgur.com/AhdgaqK.png");
                 }
             }
         },
@@ -556,20 +640,20 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "KeniBot :hdk:",
+        botName: "KeniBot :kappa:",
         language: "english",
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
         maximumAfk: 5000,
         afkRemoval: false,
         maximumDc: 0,
-        bouncerPlus: true,
+        bouncerPlus: false,
         lockdownEnabled: false,
         lockGuard: false,
         maximumLocktime: 10,
         cycleGuard: false,
         maximumCycletime: 10,
         timeGuard: true,
-        maximumSongLength: 11,
+        maximumSongLength: 6.5,
         autodisable: true,
         commandCooldown: 1,
         usercommandsEnabled: true,
@@ -587,7 +671,7 @@
         afkRankCheck: "ambassador",
         motdEnabled: true,
         motdInterval: 5,
-        motd: "Bot Commands: http://pastebin.com/U4hS11n3 Rules: http://pastebin.com/6NEPtZW9 **While Forsen is streaming: No Sanic, Scotland, MLG*",
+        motd: "Bot Commands: http://pastebin.com/U4hS11n3 Rules: http://pastebin.com/6NEPtZW9 **While Forsen is streaming no: Sanic, MLG, Scotland, ear rape**",
         filterChat: false,
         etaRestriction: false,
         welcome: false,
