@@ -750,7 +750,7 @@
         afkRankCheck: "ambassador",
         motdEnabled: true,
         motdInterval: 5,
-        motd: "Rules: http://pastebin.com/6NEPtZW9 **While Forsen is streaming no: Sanic, MLG, Scotland, ear rape**",
+        motd: "Rules: http://pastebin.com/6NEPtZW9 **While Forsen is streaming no: Sanic, MLG, Scotland, ear rape** Asking for Skip = Mute/ Ban",
         filterChat: false,
         etaRestriction: false,
         welcome: false,
