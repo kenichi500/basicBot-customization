@@ -16,7 +16,6 @@
         /*
          Extend the bot here, either by calling another function or here directly.
          Model code for a bot command:
-
          bot.commands.commandCommand = {
          command: 'cmd',
          rank: 'user/bouncer/mod/manager',
@@ -29,7 +28,6 @@
          }
          }
          }
-
          */
 
                 bot.commands.baconCommand = {
@@ -411,7 +409,7 @@
             }
         },
         
-        +        bot.commands.gravCommand = {
+        bot.commands.gravCommand = {
             command: 'grav',  //The command to be called. With the standard command literal this would be: !bacon
             rank: 'user', //Minimum user permission to use the command
             type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
@@ -759,20 +757,20 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "KeniBot :forsenkappa:",
+        botName: "KeniBot :kappa:",
         language: "english",
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
         maximumAfk: 5000,
         afkRemoval: false,
-        maximumDc: 0,
-        bouncerPlus: false,
+        maximumDc: 45,
+        bouncerPlus: true,
         lockdownEnabled: false,
         lockGuard: false,
         maximumLocktime: 10,
         cycleGuard: false,
         maximumCycletime: 10,
         timeGuard: true,
-        maximumSongLength: 6.5,
+        maximumSongLength: 11,
         autodisable: true,
         commandCooldown: 1,
         usercommandsEnabled: true,
@@ -790,11 +788,11 @@
         afkRankCheck: "ambassador",
         motdEnabled: true,
         motdInterval: 5,
-        motd: "Rules: http://pastebin.com/6NEPtZW9 **While Forsen is streaming no: Sanic, MLG, Scotland, ear rape** Asking for Skip = Mute/ Ban",
+        motd: "Bot Commands: http://pastebin.com/U4hS11n3 **While Forsen is streaming no: Sanic, MLG, Scotland, ear rape**",
         filterChat: false,
         etaRestriction: false,
         welcome: false,
-        opLink: "http://pastebin.com/N2xAtwS6",
+        opLink: "http://forsencancer.weebly.com/",
         rulesLink: "http://pastebin.com/6NEPtZW9",
         themeLink: "http://i.imgur.com//nNSnshB.png",
         fbLink: "https://twitter.com/forsensc2",
