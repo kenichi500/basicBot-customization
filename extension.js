@@ -776,7 +776,7 @@
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
         maximumAfk: 5000,
         afkRemoval: false,
-        maximumDc: 45,
+        maximumDc: 0,
         bouncerPlus: false,
         lockdownEnabled: false,
         lockGuard: false,
