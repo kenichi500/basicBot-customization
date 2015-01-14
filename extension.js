@@ -960,7 +960,7 @@
         songstats: false,
         commandLiteral: "!",
         blacklists: {
-            NSFW: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
+            NSFW: "https://rawgit.com/kenichi500/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
             OP: "https://rawgit.com/kenichi500/basicBot-customization/master/blacklists/ExampleOPlist.json",
         }
     }));
