@@ -30,40 +30,7 @@
          */
          // in extension.js ~~~~~~~~~
 
-blacklistEnabled: false,
 
-toggleblCommand: {
-	command: 'togglebl',
-	rank: 'bouncer',
-	type: 'exact',
-	functionality: function (chat, cmd) {
-    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
-      else {
-        var temp = basicBot.settings.blacklistEnabled;
-        basicBot.settings.blacklistEnabled = !temp;
-        if (basicBot.settings.blacklistEnabled) {
-          return API.sendChat(subChat(basicBot.chat.toggleon, {name: chat.un, 'function': basicBot.chat.blacklist}));
-        }
-        else return API.sendChat(subChat(basicBot.chat.toggleoff, {name: chat.un, 'function': basicBot.chat.blacklist}));
-    }
-  }
-},
-
-var mid = obj.media.format + ':' + obj.media.cid;
-for (var bl in basicBot.room.blacklists) {
-	if (basicBot.settings.blacklistEnabled) {
-		if (basicBot.room.blacklists[bl].indexOf(mid) > -1) {
-			API.sendChat(subChat(basicBot.chat.isblacklisted, {blacklist: bl}));
-			return API.moderateForceSkip();
-		}
-	}
-}
-
-
-// in en.json ~~~~~~~~~
-
-"blacklist": "blacklist",
 
                 bot.commands.baconCommand = {
             command: 'bacon',  //The command to be called. With the standard command literal this would be: !bacon
