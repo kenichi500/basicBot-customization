@@ -1104,7 +1104,7 @@
         afkRankCheck: "ambassador",
         motdEnabled: true,
         motdInterval: 5,
-        motd: "Read The Rules: http://pastebin.com/6NEPtZW9. While Forsen is streaming no Sanic, MLG, Scotland, ear rape",
+        motd: "Read the rules: http://pastebin.com/6NEPtZW9. While Forsen is streaming no: Sanic, MLG, Earrape, Scotland, Scrollex, Word Nigger",
         filterChat: false,
         etaRestriction: false,
         welcome: false,
@@ -1119,8 +1119,8 @@
         songstats: false,
         commandLiteral: "!",
         blacklists: {
-            NSFW: "https://rawgit.com/kenichi500/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
-            OP: "https://rawgit.com/kenichi500/basicBot-customization/master/blacklists/ExampleOPlist.json",
+            NSFW: "https://rawgit.com/kenitek/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
+            OP: "https://rawgit.com/kenitek/basicBot-customization/master/blacklists/ExampleOPlist.json",
         }
     }));
 
